@@ -14,6 +14,7 @@
 	<name>crudopAssignment</name>
 	<description>Spring crud operation endpoint</description>
 	<properties>
+	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>1.8</java.version>
 	</properties>
 	<dependencies>
@@ -38,15 +39,18 @@
 			<scope>runtime</scope>
 		</dependency>
 		<dependency>
-			<groupId>com.oracle.database.jdbc</groupId>
+			<groupId>com.oracle.ojdbc</groupId>
 			<artifactId>ojdbc8</artifactId>
-			<scope>runtime</scope>
+			<version>19.3.0.0</version>
 		</dependency>
-		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
-			<optional>true</optional>
-		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok-maven-plugin -->
+<dependency>
+    <groupId>org.projectlombok</groupId>
+    <artifactId>lombok-maven-plugin</artifactId>
+    <version>1.14.4.0</version>
+    <scope>provided</scope>
+</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
